@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from './images/logo.png'
-
+import logo from './images/image.png'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -18,22 +17,22 @@ const Navbar = () => {
                     <img src={logo} alt='logo' />
                 </a>
                 <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaTimes size={30} style={{ color: 'rgb(37, 150, 190)' }} />)
-                        : (<FaBars size={30} style={{ color: 'rgb(37, 150, 190)' }} />)}
+                    {click ? (<FaTimes size={30} style={{ color: 'rgb(255, 255, 255)' }} />)
+                        : (<FaBars size={30} style={{ color: 'rgb(255, 255, 255)' }} />)}
 
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>Home</a>
+                        <a href='/' onClick={closeMenu}>INICIO</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#about' onClick={closeMenu}>About</a>
+                        <a href='#about' onClick={closeMenu}>GRÁFICAS</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#chart' onClick={closeMenu}>Chart</a>
+                        <a href='#chart' onClick={closeMenu}>SOBRE NOSOTROS</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#canvas' onClick={closeMenu}>Canvas</a>
+                        <a href='#canvas' onClick={closeMenu}>MÁS INFORMACIÓN</a>
                     </li>
                 </ul>
             </nav>

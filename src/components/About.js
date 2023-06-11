@@ -9,7 +9,7 @@ import lilliam from '../components/images/lilliam.jpg'
 const About = () => {
     return (
         <div>
-        <h1>About the team</h1>
+        <h1>SOBRE NOSOTROS</h1>
         <div className="main-container" id="about">
         <div className="cards">
             <div>

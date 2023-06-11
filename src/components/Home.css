@@ -5,13 +5,17 @@
 }
 
 .container-map {
-    background-color: blueviolet;
     width: 50%;
-    padding: 25vh;
+    padding: 1rem;
     float: left;
     height: 50%;
     display: grid;
     place-items: center;
+}
+
+.map{
+    width: 750px;
+    height: 490px;
 }
 
 .container-levels {
@@ -20,23 +24,21 @@
     height: 50%;
     display: grid;
     place-items: center;
+    padding: 1rem;
 }
 
-.container-levels .levels img{
-    width: 90%;
-    height: 90%;
-}
-@media screen and (max-width:375px ) {
-    .home {
-        width: 100%;
-        height: 50%;
-    }
+.container-levels img{
+    width: 75%;
 }
 
-@media screen and (max-width:900px ){  
+@media screen and (max-width:500px){  
     .container-map {
         width: 100%;
         height: 50%;
+    }
+
+    .map{
+        width: 40vh;
     }
 
     .container-levels {
@@ -45,10 +47,8 @@
     }
 }
 
-.leaflet-container {
-    width: 100vw;
-    height: 100vh;
-  }
+
+
 
 
 

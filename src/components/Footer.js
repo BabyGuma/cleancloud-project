@@ -1,28 +1,12 @@
 import React from 'react'
+import logo from './images/image.png'
 import './Footer.css'
 
 const Footer = () => {
     return (
         <div className='footer'>
             <div className='container'>
-                <ul>
-                    <li className='nav-item'>
-                        <a href='/'>Home</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#about'>About</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#chart'>Chart</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#canvas'>Canvas</a>
-                    </li>
-                </ul>
-                <div className='bottom'>
-                    <span className='line'></span>
-                    <p>2023 Execute, Inc. All rights reserved</p>
-                </div>
+                <img src= {logo} alt='logo'></img>
             </div>
         </div>
     )
