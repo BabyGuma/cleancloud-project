@@ -8,7 +8,8 @@
     width: 100%;
     margin: auto;
     display: grid;
-    background: #e3e3e3;
+    background: #f2f3f5;
+    border-radius: 11px;
 }
 
 .canvas .contaminantes .title {
@@ -78,9 +79,20 @@
         align-items: center;
     }
 
+    .canvas .container-canvas .col-2 {
+        padding: 1rem;
+    }
+
     .canvas .container-canvas .col-2 img {
         width: 300px;
         height: 650px;
+        padding: 1rem;
     }
 
+}
+
+@media screen and (max-width: 320px) {
+    .canvas .contaminantes .title{
+        padding: 1rem;
+    }
 }

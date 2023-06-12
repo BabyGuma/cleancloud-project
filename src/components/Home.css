@@ -15,7 +15,7 @@
 
 .map{
     width: 750px;
-    height: 490px;
+    height: 440px;
 }
 
 .container-levels {
@@ -31,14 +31,14 @@
     width: 75%;
 }
 
-@media screen and (max-width:500px){  
+@media screen and (max-width:1015px){  
     .container-map {
         width: 100%;
         height: 50%;
     }
 
     .map{
-        width: 40vh;
+        width: 35vh;
     }
 
     .container-levels {

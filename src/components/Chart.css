@@ -2,7 +2,7 @@
     width: 100%;
     margin: auto;
     display: grid;
-    background: #e3e3e3;
+    background: #f2f3f5;
 }
 
 .chart h2 {
@@ -32,17 +32,16 @@
 
 .chart button {
     margin-top: 1rem;
+    background-color: #81c1fc;
+    border-radius: 11px;
+    font-weight: bolder;
 }
 
 @media screen and (max-width:940px) {
     .chart .container {
         grid-template-columns: 1fr;
     }
-
-    .chart .container {
-        width: 100%;
-    }
-
+    
     .chart .container img {
         padding: 0rem;
         width: 90vw;
