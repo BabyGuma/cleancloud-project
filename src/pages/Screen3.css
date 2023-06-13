@@ -1,0 +1,10 @@
+.screen3{
+    background-image: url(../components/images/fondo-iot.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+
+.screen3 h3{
+    color: rgb(133, 133, 133);
+}
+
