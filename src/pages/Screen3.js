@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Screen3.css'
+import mqttClient from '../mqtt/mqttClient'; // Ruta al archivo mqttClient.js
+
 
 const Screen3 = () => {
-    return (
-        <div className='screen3' id='screen3'>
-            <h3>CONTROL DE SENSORES DE CALIDAD DEL AIRE</h3>
+    const [sensorData, setSensorData] = useState({});
 
-            <button id="iniciar">Iniciar</button>
-            <button id="detener">Detener</button>
-        </div>
-    )
-}
+    const startProgram = () => {
+    mqttClient.startGeneratingData((newSensorData) => {
+        setSensorData(newSensorData);
+    });
+};
+
+const stopProgram = () => {
+    mqttClient.stopGeneratingData();
+};
+
+return (
+    <div>
+        <button onClick={startProgram}>Iniciar programa</button>
+        <button onClick={stopProgram}>Detener programa</button>
+        <pre>{JSON.stringify(sensorData, null, 2)}</pre>
+    </div>
+    );
+};
 export default Screen3;
