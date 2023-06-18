@@ -26,13 +26,13 @@ const Navbar = () => {
                         <a href='/' onClick={closeMenu}>INICIO</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#about' onClick={closeMenu}>GRÁFICAS</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#chart' onClick={closeMenu}>SOBRE NOSOTROS</a>
+                        <a href='#chart' onClick={closeMenu}>GRÁFICAS</a>
                     </li>
                     <li className='nav-item'>
                         <a href='#canvas' onClick={closeMenu}>MÁS INFORMACIÓN</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#about' onClick={closeMenu}>SOBRE NOSOTROS</a>
                     </li>
                 </ul>
             </nav>

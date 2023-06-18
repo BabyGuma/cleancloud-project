@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import './Screen2.css'
 import { Link } from "react-router-dom";
 import imgsoluc from '../components/images/canva4.png'
+import GraphComponent from './GraphComponent';
 
 const Screen2 = () => {
+
+    // FORMULARIO
     const [values, setValues] = useState({
         place: "",
         age: "",
@@ -12,11 +15,11 @@ const Screen2 = () => {
     });
 
     const handleInputChange = (event) => {
-        const {name, value} = event.target;
+        const { name, value } = event.target;
 
         setValues({
             values,
-            [name] : value,
+            [name]: value,
         });
     };
 
@@ -34,28 +37,28 @@ const Screen2 = () => {
                         <input
                             type='text'
                             name="place"
-                            value={values.place ||""}
+                            value={values.place || ""}
                             placeholder='Lugar que visitaste'
                             onChange={handleInputChange}
                         />
                         <input
                             type='text'
                             name="age"
-                            value={values.age ||""}
+                            value={values.age || ""}
                             placeholder='¿Cuál es tu edad?'
                             onChange={handleInputChange}
                         />
                         <input
                             type='text'
                             name="sex"
-                            value={values.sex ||""}
+                            value={values.sex || ""}
                             placeholder='¿Cuál es tu sexo?'
                             onChange={handleInputChange}
                         />
                         <input
                             type='text'
                             name="enfermedad"
-                            value={values.enfermedad ||""}
+                            value={values.enfermedad || ""}
                             placeholder='¿Sufres de alguna enfermdad respiratoria?'
                             onChange={handleInputChange}
                         />
@@ -64,6 +67,11 @@ const Screen2 = () => {
                 </div>
                 <div className='imgSoluciones'>
                     <img src={imgsoluc} alt='imgsoluc' />
+                </div>
+                <h4>Analísis de datos</h4>
+                <div className='analydata'>
+                    <h5>Graficas</h5>
+                    <GraphComponent/>
                 </div>
                 <div className='btn'>
                     <button className='button'>
