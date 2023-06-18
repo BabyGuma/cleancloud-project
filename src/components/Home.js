@@ -37,7 +37,6 @@ export default function Home() {
             url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
           />
         </MapContainer>
-
         {aqis.map(aqi =>
           <Marker key={aqi.id}
             position={[aqi.location.latitude, aqi.location.longitude]}
